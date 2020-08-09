@@ -1,0 +1,47 @@
+{
+  "name": "dd-stores",
+  "version": "1.0.0",
+  "description": "钉钉小程序多状态管理 - 解决跨页面跨组件间通信，简洁小巧高性能（适用于支付宝等阿里系小程序）",
+  "main": "dist/create.js",
+  "module": "dist/create.js",
+  "scripts": {
+    "build": "babel src/create.js -o dist/create.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "linjc",
+    "url": "https://github.com/linjc"
+  },
+  "keywords": [
+    "dd-store",
+    "dd-stores",
+    "dd-state",
+    "eapp-store",
+    "eapp-state",
+    "dd-eapp",
+    "E应用",
+    "状态管理库",
+    "E应用状态管理",
+    "钉钉小程序",
+    "支付宝小程序",
+    "小程序状态管理",
+    "全局状态管理",
+    "跨组件通信",
+    "dingtalk",
+    "eapp",
+    "dd"
+  ],
+  "homepage": "https://github.com/linjc/dd-stores",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linjc/dd-stores.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linjc/dd-stores/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
