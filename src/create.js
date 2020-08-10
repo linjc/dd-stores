@@ -25,6 +25,11 @@ function initStores(stores, option) {
 }
 
 export function createPage(stores, option) {
+  if (!option) {
+    console.error('createPage第一个参数有误，请传入需要注入的stores对象')
+    option = stores
+    stores = {}
+  }
   initStores(stores, option)
 
   const onLoad = option.onLoad
@@ -51,6 +56,11 @@ export function createPage(stores, option) {
 }
 
 export function createComponent(stores, option) {
+  if (!option) {
+    console.error('createComponent第一个参数有误，请传入需要注入的stores对象')
+    option = stores
+    stores = {}
+  }
   initStores(stores, option)
 
   const _onMount = option.didMount
