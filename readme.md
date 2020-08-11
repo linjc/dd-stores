@@ -89,7 +89,7 @@ create.Page(stores, {
 
 #### 创建组件
 
-使用create.Component(stores, option)创建页面。使用和create.Page一样。
+使用create.Component(stores, option)创建组件。使用和create.Page一样。
 
 
 ``` js
@@ -103,19 +103,21 @@ const stores = {
 }
 
 create.Component(stores, {
-  onLoad() {},
+  didMount() {},
   data: {},
-  handleChangeTitle() {
-    globalStore.data.title = '新标题'
-    this.update()
-  },
-  handleChangeName() {
-    indexStore.changeName()
+  methods: {
+    handleChangeTitle() {
+      globalStore.data.title = '新标题'
+      this.update()
+    },
+    handleChangeName() {
+      indexStore.changeName()
+    }
   }
 });
 ```
 
-#### .axml视图上使用
+#### axml视图上使用
 简单示例：
 ``` js
 <view>
