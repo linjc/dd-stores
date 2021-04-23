@@ -67,6 +67,7 @@ export function createComponent(stores, option) {
   option.didMount = function (query) {
     this.update = updateState
     this._page = this.$page || getPage()
+    __instances[this._page.route] = __instances[this._page.route] || []
     Object.keys(stores).forEach(key => __instances[this._page.route].push({ key, vm: this, store: stores[key] }))
     this.update(this._page.route)
     _onMount && _onMount.call(this, query)
