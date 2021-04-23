@@ -16,6 +16,7 @@ npm i dd-stores --save
 * create.Component(stores, option) 创建组件
 * this.update() 更新页面或组件，在页面、组件、store内使用
 * store.update() 其他js文件中使用，需要引入相应的store
+
 【注意：update已作为更新函数被占用，所以在store、页面、组件上不要重定义update字段，避免覆盖】
 
 ## 使用
