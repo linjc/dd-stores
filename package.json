@@ -1,6 +1,6 @@
 {
   "name": "dd-stores",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "钉钉小程序多状态管理 - 解决跨页面跨组件间通信，简洁小巧高性能（适用于支付宝等阿里系小程序）",
   "main": "dist/create.js",
   "module": "dist/create.js",

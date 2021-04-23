@@ -84,6 +84,7 @@ function createComponent(stores, option) {
 
     this.update = updateState;
     this._page = this.$page || getPage();
+    __instances[this._page.route] = __instances[this._page.route] || [];
     Object.keys(stores).forEach(function (key) {
       return __instances[_this2._page.route].push({ key: key, vm: _this2, store: stores[key] });
     });
